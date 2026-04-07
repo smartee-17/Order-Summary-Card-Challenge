@@ -1,0 +1,238 @@
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('./Red_Hat_Display/static/RedHatDisplay-Regular.ttf')
+}
+
+:root{
+  /* Primary */
+  --Blue-100: hsl(225, 100%, 94%);
+  --Blue-700: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --Blue-50: hsl(225, 100%, 98%);
+  --Gray-600: hsl(224, 23%, 55%);
+  --Blue-950: hsl(223, 47%, 23%);
+
+  /* Font Family */
+  --fm: 'Red Hat Display', sans-serif;
+
+  /* Typography */
+  --fs-xs: calc(0.6rem + 1vw);
+  --fs-sm: calc(0.9rem + 1vw);
+  --fs-md: calc(1rem + 1vw);
+  --fs-lg: calc(1.1rem + 1vw);
+  --fs-xl: calc(1.25rem + 1vw);
+  --fs-2xl: calc(1.5rem + 1vw);
+  --fs-3xl: calc(1.75rem + 1vw);
+
+    /* ========== SPACING (4px + 8px system in REM) ========== */
+  --space-0: 0rem;        /* 0px  */
+  --space-1: 0.25rem;     /* 4px  */
+  --space-2: 0.5rem;      /* 8px  */
+  --space-3: 1rem;        /* 16px */
+  --space-4: 1.5rem;      /* 24px */
+  --space-5: 2rem;        /* 32px */
+  --space-6: 2.5rem;      /* 40px */
+  --space-7: 3rem;        /* 48px */
+  --space-8: 3.5rem;      /* 56px */
+  --space-9: 4rem;        /* 64px */
+  --space-10: 4.5rem ;
+  --space-11: 5rem ;
+  --space-12: 5.5rem ;
+  --space-13: 6rem ;
+
+    /* Width */
+  --w-0: 8vw;
+  --w-1: 20vw;   /* very small element  */
+  --w-2: 30vw;   /* small cards        */
+  --w-3: 40vw;   /* small sections     */
+  --w-4: 50vw;   /* half width         */
+  --w-5: 60vw;   /* medium content     */
+  --w-6: 70vw;   /* large content      */
+  --w-7: 80vw;   /* wide panels        */
+  --w-8: 90vw;   /* very wide          */
+  --w-9: 95vw;
+  --w-full: 100vw;  /* full width */
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;  /* 4px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 0.75rem;  /* 12px */
+  --radius-xl: 1rem;     /* 16px */
+  --radius-round: 50%;   /* circular elements */
+
+  /* Z index */
+  --z-header: 1000;
+  --z-sidebar: 900;
+  --z-modal: 1100;
+  --z-tooltip: 1200;
+
+  /* ========= SHADOW SYSTEM ========= */
+  --shadow-1: 0 1px 2px var(--Blue-950);
+  --shadow-2: 0 2px 4px var(--Blue-950);
+  --shadow-3: 0 4px 8px var(--Gray-600);
+  --shadow-4: 0 8px 16px hsla(224, 23%, 55%, 0.564);
+
+  /* ========= MOTION ========= */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: 150ms var(--ease);
+  --transition-medium: 250ms var(--ease);
+  --transition-slow: 400ms var(--ease);
+
+    /* Custom width */
+    --main-width: var(--w-8);
+
+    /* Background image */
+    --bg-url: url(./images/pattern-background-mobile.svg);
+
+    /* Article padding */
+    --article-pad: var(--space-5);
+}
+
+@media (max-width: 20em) {
+  :root{
+    /* Article padding */
+    --article-pad: var(--space-3);
+  }
+}
+
+@media (min-width: 43em){
+  :root {
+    --fs-xs: calc(0.8rem + 0.2vw);
+    --fs-sm: calc(0.9rem + 0.3vw);
+    --fs-md: calc(1rem + 0.4vw);
+    --fs-lg: calc(1.1rem + 0.5vw);
+    --fs-xl: calc(1.25rem + 0.6vw);
+    --fs-2xl: calc(1.5rem + 0.8vw);
+    --fs-3xl: calc(1.75rem + 1vw);
+
+    /* Spacing */
+    --space-0: 0rem;
+    --space-1: calc(0.25rem * 1.1);
+    --space-2: calc(0.5rem * 1.1);
+    --space-3: calc(1rem * 1.1);
+    --space-4: calc(1.5rem * 1.1);
+    --space-5: calc(2rem * 1.1);
+    --space-6: calc(2.5rem * 1.1);
+    --space-7: calc(3rem * 1.1);
+    --space-8: calc(3.5rem * 1.1);
+    --space-9: calc(4rem * 1.1);
+    --space-10: calc(4.5rem * 1.1);
+    --space-11: calc(5rem * 1.1);
+    --space-12: calc(5.5rem * 1.1);
+    --space-13: calc(6rem * 1.1);
+
+    /* Width */
+    --w-0: 7vw;
+    --w-1: 15vw;
+    --w-2: 25vw;
+    --w-3: 40vw;
+    --w-4: 45vw;
+    --w-5: 55vw;
+    --w-6: 65vw;
+    --w-7: 75vw;
+    --w-8: 85vw;
+    --w-full: 100vw;
+
+  /* Border radius */
+  --radius-sm: calc(0.25rem + 0.2vw);
+  --radius-md: calc(0.5rem + 0.3vw);
+  --radius-lg: calc(0.75rem + 0.4vw);
+  --radius-xl: calc(1rem + 0.5vw);
+
+  /* Custom width */
+  --main-width: var(--w-5);
+
+  /* Background image */
+  --bg-url: url(./images/pattern-background-desktop.svg);
+
+    /* Article padding */
+    --article-pad: var(--space-7);
+}
+}
+
+
+@media (min-width: 64em) {
+  :root {
+    --fs-xs: calc(0.8rem + 1vw);
+    --fs-sm: calc(0.9rem + 1vw);
+    --fs-md: calc(1rem + 1vw);
+    --fs-lg: calc(1.1rem + 1vw);
+    --fs-xl: calc(1.25rem + 1vw);
+    --fs-2xl: calc(1.5rem + 1vw);
+    --fs-3xl: calc(1.75rem + 1vw);
+
+    /* Spacing */
+    --space-0: 0rem;
+    --space-1: calc(0.25rem * 1.25);
+    --space-2: calc(0.5rem * 1.25);
+    --space-3: calc(1rem * 1.25);
+    --space-4: calc(1.5rem * 1.25);
+    --space-5: calc(2rem * 1.25);
+    --space-6: calc(2.5rem * 1.25);
+    --space-7: calc(3rem * 1.25);
+    --space-8: calc(3.5rem * 1.25);
+    --space-9: calc(4rem * 1.25);
+    --space-10: calc(4.5rem * 1.25);
+    --space-11: calc(5rem * 1.25);
+    --space-12: calc(5.5rem * 1.25);
+    --space-13: calc(6rem * 1.25);
+
+    /* Width */
+    --w-0: 5vw;
+    --w-1: 10vw;
+    --w-2: 20vw;
+    --w-3: 30vw;
+    --w-4: 40vw;
+    --w-5: 50vw;
+    --w-6: 60vw;
+    --w-7: 70vw;
+    --w-8: 80vw;
+    --w-full: 100vw;
+
+    /* Border radius */
+    --radius-sm: calc(0.25rem + 0.3vw);
+    --radius-md: calc(0.5rem + 0.4vw);
+    --radius-lg: calc(0.75rem + 0.5vw);
+    --radius-xl: calc(1rem + 0.6vw);
+
+      /* Custom width */
+    --main-width: var(--w-4);
+
+  }
+
+}
+
+@media (min-width: 75em) {
+    :root {
+    --fs-xs: calc(0.8rem + 0.5vw);
+    --fs-sm: calc(0.9rem + 0.6vw);
+    --fs-md: calc(1rem + 0.7vw);
+    --fs-lg: calc(1.1rem + 0.9vw);
+    --fs-xl: calc(1.25rem + 1vw);
+    --fs-2xl: calc(1.5rem + 1.3vw);
+    --fs-3xl: calc(1.75rem + 1.5vw);
+
+    /* Spacing */
+    --space-0: 0rem;
+    --space-1: calc(0.25rem * 1.25);
+    --space-2: calc(0.5rem * 1.25);
+    --space-3: calc(1rem * 1.25);
+    --space-4: calc(1.5rem * 1.25);
+    --space-5: calc(2rem * 1.25);
+    --space-6: calc(2.5rem * 1.25);
+    --space-7: calc(3rem * 1.25);
+    --space-8: calc(3.5rem * 1.25);
+    --space-9: calc(4rem * 1.25);
+    --space-10: calc(4.5rem * 1.25);
+    --space-11: calc(5rem * 1.25);
+    --space-12: calc(5.5rem * 1.25);
+    --space-13: calc(6rem * 1.25);
+
+      /* Border radius */
+    --radius-sm: calc(0.25rem + 0.3vw);
+    --radius-md: calc(0.5rem + 0.4vw);
+    --radius-lg: calc(0.75rem + 0.5vw);
+    --radius-xl: calc(1rem + 0.6vw);
+  }
+}

@@ -1,0 +1,166 @@
+@import url('./root-style.css');
+
+@layer base, component, utilities;
+
+@layer base{
+  *,
+  *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+  }
+
+  html{
+    box-sizing: border-box;
+  }
+
+  body{
+    justify-content: center;
+    align-items: center;
+
+     min-height: 100vh;
+
+    background-color: var(--Blue-100);
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+
+    font-family: var(--fm);
+    font-size: var(--fs-xs);
+  }
+
+
+}
+
+@layer component{
+
+  /* Main  */
+  main{
+    width: var(--main-width);
+    border-radius: var(--radius-lg);
+    margin: var(--space-3);
+
+    background-color: white;
+  }
+
+  /* hero-image */
+  .hero-img{
+    width: 100%;
+    border-top-right-radius: var(--radius-lg);
+    border-top-left-radius:  var(--radius-lg);
+  }
+
+  /* article */
+  article{
+    padding: var(--article-pad);
+  }
+
+  /* Order summary */
+  h1{
+    margin-bottom: var(--space-2);
+
+    color: var(--Blue-950);
+
+    font-size: var(--fs-md);
+    text-align: center;
+  }
+
+  p{
+    line-height: 1.2;
+    text-align: center;
+
+    color: var(--Gray-600);
+    margin-bottom: var(--space-4);
+  }
+
+  /* Plan */
+  .plan-container{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+
+    align-items: center;
+
+    padding: var(--space-3) var(--space-3);
+    margin-bottom: var(--space-4);
+    border-radius: var(--radius-lg);
+
+    background-color: var(--Blue-50);
+  }
+
+  h2{
+    font-size: var(--fs-sm);
+    color: var(--Blue-950);
+  }
+
+  .plan-price{
+    color: var(--Gray-600);
+  }
+
+  .plan-container a{
+    font-size: var(--fs-xs);
+    font-family: var(--fm);
+    font-weight: 700;
+
+    color: var(--Blue-700);
+
+    cursor: pointer;
+  }
+
+  .plan-container a:hover{
+    text-decoration: none;
+    opacity: 0.7;
+  }
+
+  /* PROCEED TO PAYMENT BUTTON  */
+  .payment-btn{
+    padding: var(--space-3);
+    border-radius: var(--radius-lg);
+    border: none;
+    box-shadow: var(--shadow-4);
+    margin-bottom: var(--space-4);
+
+    background-color: var(--Blue-700);
+    color: var(--Blue-50);
+
+    font-family: var(--fm);
+    font-size: var(--fs-xs);
+
+    cursor: pointer;
+    transition: opacity var(--transition-medium);
+  }
+
+ .payment-btn:hover{
+    opacity: 0.85;
+  }
+
+  /* CANCEL ORDER */
+  .cancel{
+    padding: var(--space-2);
+    border: none;
+
+    font-family: var(--fm);
+    font-size: var(--fs-xs);
+    text-align: center;
+    font-weight: 700;
+
+    background: transparent;
+    color: var(--Gray-600);
+
+    cursor: pointer;
+    transition: color var(--transition-medium);
+  }
+
+  .cancel:hover{
+    color: var(--Blue-950);
+  }
+}
+
+@layer utilities{
+  .flex-row{
+    display: flex;
+  }
+
+  .flex-column{
+    display: flex;
+    flex-direction: column;
+  }
+}
