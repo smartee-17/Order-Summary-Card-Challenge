@@ -36,8 +36,8 @@ Users should be able to:
 
 ### 🔗 Links
 
-- **Solution URL:** [ https://your-solution-url.com ] (https://www.frontendmentor.io/solutions/responsive-order-summary-card-AZfyeWuibm)
-- **Live Site URL:** [ https://your-live-site-url.com] (https://smartee-17.github.io/Order-Summary-Card-Challenge/order-summary-component-main%20-%20Copy/)
+- **Solution URL:** https://www.frontendmentor.io/solutions/responsive-order-summary-card-AZfyeWuibm
+- **Live Site URL:** https://smartee-17.github.io/Order-Summary-Card-Challenge/order-summary-component-main%20-%20Copy/
 
 
 
